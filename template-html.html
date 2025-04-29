@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cardápio Familiar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0 !important;
+        }
+        .btn-primary {
+            background-color: #4caf50;
+            border-color: #4caf50;
+        }
+        .btn-primary:hover {
+            background-color: #388e3c;
+            border-color: #388e3c;
+        }
+        .tab-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            border-left: 1px solid #dee2e6;
+            border-right: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .nav-tabs .nav-link.active {
+            border-color: #dee2e6 #dee2e6 #fff;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        .result-area {
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .ingredient-category {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        .ingredient-item {
+            padding: 5px 10px;
+            margin: 5px 0;
+            background-color: #f1f8e9;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .meal-card {
+            background-color: #f9fff9;
+            border-left: 3px solid #4caf50;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .meal-title {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h1 class="text-center mb-4">Sistema de Cardápio Familiar com IA</h1>
+                
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Gerar Cardápio</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="estoque-tab" data-bs-toggle="tab" data-bs-target="#estoque" type="button" role="tab" aria-controls="estoque" aria-selected="false">Estoque Atual</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="receitas-tab" data-bs-toggle="tab" data-bs-target="#receitas" type="button" role="tab" aria-controls="receitas" aria-selected="false">Receitas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="preferencias-tab" data-bs-toggle="tab" data-bs-target="#preferencias" type="button" role="tab" aria-controls="preferencias" aria-selected="false">Preferências</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="myTabContent">
+                    <!-- Tab Gerar Cardápio -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="text-center mb-4">
+                            <button id="btn-gerar-cardapio" class="btn btn-primary btn-lg">Gerar Cardápio Semanal</button>
+                        </div>
+                        
+                        <div id="loading">
+                            <div class="spinner
