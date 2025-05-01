@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Semanal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Seu Cardápio Semanal</h1>
+        
+        <div class="cardapio">
+            <pre>{{ cardapio_formatado }}</pre>
+        </div>
+        
+        <h2>Lista de Compras</h2>
+        <div class="lista-compras">
+            <pre>{{ lista_compras_formatada }}</pre>
+        </div>
+        
+        <a href="{{ url_for('index') }}" class="btn">Voltar</a>
+    </div>
+</body>
+</html>
