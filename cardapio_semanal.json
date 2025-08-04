@@ -1,0 +1,37 @@
+{
+    "Segunda": {
+        "café da manhã": "Café com leite e pão",
+        "almoço": "Macarrão à bolonhesa",
+        "jantar": "Macarrão à bolonhesa"
+    },
+    "Terça": {
+        "café da manhã": "Omelete de queijo",
+        "almoço": "Frango assado com batatas",
+        "jantar": "Omelete de queijo"
+    },
+    "Quarta": {
+        "café da manhã": "Café com leite e pão",
+        "almoço": "Frango assado com batatas",
+        "jantar": "Arroz e feijão com frango grelhado"
+    },
+    "Quinta": {
+        "café da manhã": "Omelete de queijo",
+        "almoço": "Arroz e feijão com frango grelhado",
+        "jantar": "Omelete de queijo"
+    },
+    "Sexta": {
+        "café da manhã": "Café com leite e pão",
+        "almoço": "Macarrão à bolonhesa",
+        "jantar": "Omelete de queijo"
+    },
+    "Sábado": {
+        "café da manhã": "Café com leite e pão",
+        "almoço": "Macarrão à bolonhesa",
+        "jantar": "Frango assado com batatas"
+    },
+    "Domingo": {
+        "café da manhã": "Omelete de queijo",
+        "almoço": "Arroz e feijão com frango grelhado",
+        "jantar": "Macarrão à bolonhesa"
+    }
+}

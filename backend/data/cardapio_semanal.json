@@ -1,21 +1,21 @@
 {
     "Segunda": {
         "café da manhã": "Café com leite e pão",
-        "almoço": "Macarrão à bolonhesa",
-        "jantar": "Frango assado com batatas"
+        "almoço": "Arroz e feijão com frango grelhado",
+        "jantar": "Omelete de queijo"
     },
     "Terça": {
-        "café da manhã": "Omelete de queijo",
+        "café da manhã": "Café com leite e pão",
         "almoço": "Frango assado com batatas",
         "jantar": "Arroz e feijão com frango grelhado"
     },
     "Quarta": {
-        "café da manhã": "Café com leite e pão",
-        "almoço": "Macarrão à bolonhesa",
-        "jantar": "Arroz e feijão com frango grelhado"
+        "café da manhã": "Omelete de queijo",
+        "almoço": "Frango assado com batatas",
+        "jantar": "Macarrão à bolonhesa"
     },
     "Quinta": {
-        "café da manhã": "Omelete de queijo",
+        "café da manhã": "Café com leite e pão",
         "almoço": "Macarrão à bolonhesa",
         "jantar": "Arroz e feijão com frango grelhado"
     },
@@ -25,13 +25,13 @@
         "jantar": "Arroz e feijão com frango grelhado"
     },
     "Sábado": {
-        "café da manhã": "Café com leite e pão",
-        "almoço": "Macarrão à bolonhesa",
-        "jantar": "Arroz e feijão com frango grelhado"
+        "café da manhã": "Omelete de queijo",
+        "almoço": "Frango assado com batatas",
+        "jantar": "Omelete de queijo"
     },
     "Domingo": {
         "café da manhã": "Omelete de queijo",
-        "almoço": "Arroz e feijão com frango grelhado",
-        "jantar": "Arroz e feijão com frango grelhado"
+        "almoço": "Frango assado com batatas",
+        "jantar": "Frango assado com batatas"
     }
 }
